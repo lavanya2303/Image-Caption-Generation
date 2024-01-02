@@ -54,5 +54,6 @@ def upload():
     return render_template('Prediction.html', prediction=str(captions), image=img_base64)
 
 """ Running our application """
-if __name__ == '__main__':
-    app.run(debug=True , port= 1100)
+
+if __name__ == "__main__":
+    app.run(debug=False,host='0.0.0.0')
